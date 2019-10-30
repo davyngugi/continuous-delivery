@@ -17,3 +17,13 @@ Why Continuous Delivery?
 @snap[north span-100 headline]
 AWS CodeDeploy
 @snapend
+
+@snap[west]
+## Requirements
+@ol[spaced text-gray]
+1. Automation
+2. Repeatable
+3. Infrastructure as code
+4. Automated rollback
+5. Extensible
+@snapend
