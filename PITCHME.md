@@ -40,3 +40,7 @@ Automation
 3. Able to deploy exact branch/commit
 4. Perfom health checks
 5. Supports AWS load balancer
+
+---
+@snap[north span-100 headline]
+@snapend
