@@ -10,3 +10,4 @@ Why Continuous Delivery?
 - Eliminate human errors
 - Repeatable and predictable
 - End of release windows
+@snapend
