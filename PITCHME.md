@@ -33,13 +33,15 @@ Requirements Specification
 ## AWS CodeDeploy
 @snapend
 
+@snap[west]
 Automation
-@ol[spaced]
+@ol[spaced text-gray]
 1. Allow for both automated and manual deployment
 2. Multiple deployment strategies(rolling, blue/green)
 3. Able to deploy exact branch/commit
 4. Perfom health checks
 5. Supports AWS load balancer
+@snapend
 
 ---
 @snap[north span-100 headline]
