@@ -12,3 +12,63 @@ Background Reading
 @snap[north heading]
 `appspec.yml`
 @snapend
+
+```
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /opt/fenixdb
+permissions:
+  - object: /opt/fenixdb
+    owner: www-data
+    group: www-data
+    #mode: 777
+    type:
+      - directory
+      - file
+  - object: /opt/fenixdb_git_commit
+    owner: root
+    group: www-data
+    type:
+      - file
+  - object: /opt/fenixdb_queue_name
+    owner: root
+    group: www-data
+    type:
+      - file
+  - object: /etc/supervisor/conf.d/celery.conf
+    owner: root
+    group: www-data
+    type:
+      - file
+hooks:
+  ApplicationStop:
+    - location: scripts/codedeploy/stop_services
+      timeout: 300
+      runas: root
+  BeforeInstall:
+    - location: scripts/codedeploy/create_pid_dir
+      timeout: 3
+      runas: root
+    - location: scripts/codedeploy/extract_commit
+      timeout: 3
+      runas: root
+  AfterInstall:
+    - location: scripts/codedeploy/setup_git
+      runas: root
+    - location: scripts/codedeploy/symlink_workers
+      runas: root
+    - location: scripts/codedeploy/install_dependencies
+      runsas: root
+    - location: scripts/codedeploy/install_requirements
+      runas: root
+  ApplicationStart:
+    - location: scripts/codedeploy/start_services
+      timeout: 30
+      runas: root
+  ValidateService:
+    - location: scripts/codedeploy/status_check
+      timeout: 30
+      runas: root
+```
