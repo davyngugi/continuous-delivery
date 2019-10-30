@@ -13,13 +13,12 @@ Why Continuous Delivery?
 @snapend
 
 ---
-@title[CodeDeploy]
+@title[Requirements]
 @snap[north span-100 headline]
-AWS CodeDeploy
+Requirements Specification
 @snapend
 
-@snap[west headline]
-## Requirements
+@snap[west]
 @ol[spaced text-gray]
 1. Automation
 2. Repeatable
@@ -27,3 +26,16 @@ AWS CodeDeploy
 4. Automated rollback
 5. Extensible
 @snapend
+
+---
+@title[CodeDeploy]
+@snap[north span-100 headline]
+AWS CodeDeploy
+@snapend
+
+## Automation
+1. Allow for both automated and manual deployment
+2. Multiple deployment strategies(rolling, blue/green)
+3. Able to deploy exact branch/commit
+4. Perfom health checks
+5. Supports AWS load balancer
