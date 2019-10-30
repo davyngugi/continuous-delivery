@@ -30,10 +30,11 @@ Requirements Specification
 ---
 @title[CodeDeploy]
 @snap[north span-100 headline]
-AWS CodeDeploy
+## AWS CodeDeploy
 @snapend
 
-## Automation
+Automation
+@ol[spaced]
 1. Allow for both automated and manual deployment
 2. Multiple deployment strategies(rolling, blue/green)
 3. Able to deploy exact branch/commit
