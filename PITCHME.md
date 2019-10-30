@@ -18,7 +18,7 @@ Why Continuous Delivery?
 AWS CodeDeploy
 @snapend
 
-@snap[west]
+@snap[west headline]
 ## Requirements
 @ol[spaced text-gray]
 1. Automation
