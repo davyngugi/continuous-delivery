@@ -306,6 +306,39 @@ fi
 @[2, zoom-12](Only perform status check on installed services)
 @[12-18, zoom-13](Use new supervisor feature to get accurate running state)
 
+
+---
+@snap[north-east span-100 text-pink text-06]
+`scripts/codedeploy/start_services`
+@snapend
+
+```
+{
+    "applicationName": "fenixdb-terraform-app",
+    "deploymentGroupName": "fenixdb-terraform-deployment_grp",
+    "revision": {
+        "revisionType": "GitHub",
+        "gitHubLocation": {
+            "repository": "FenixIntl/FenixDB",
+            "commitId": "a664c73ec5ce46617f2d27c6ec5570d5df6b7af0"
+        }
+    },
+    "description": "Demo deployment",
+    "ignoreApplicationStopFailures": true,
+    "autoRollbackConfiguration": {
+        "enabled": true,
+        "events": [
+            "DEPLOYMENT_STOP_ON_REQUEST"
+        ]
+    },
+    "updateOutdatedInstancesOnly": false,
+    "fileExistsBehavior": "OVERWRITE"
+}
+```
+@snap[south span-100 text-gray text-08]
+@[8, zoom-12](Replace with the latest commit hash)
+
+
 ---?color=linear-gradient(90deg, white 65%, white 65%)
 @title[liftoff]
 
