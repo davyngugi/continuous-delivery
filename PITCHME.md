@@ -381,9 +381,9 @@ file://scripts/codedeploy/aws-deploy.json
 
 ---
 @title[Thank You]
-@span[north heading]
+@snap[north heading]
 URL for this presentation
-@spanend
+@snapend
 [https://gitpitch.com/davyngugi/continuous-delivery#/](https://gitpitch.com/davyngugi/continuous-delivery#/)
 
 ---
