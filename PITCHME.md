@@ -217,7 +217,7 @@ else
 fi
 ```
 
----
+---?color=linear-gradient(180deg, white 75%, gray 25%)
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/install_dependencies`
 @snapend
