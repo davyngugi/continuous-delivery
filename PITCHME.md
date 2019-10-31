@@ -125,6 +125,10 @@ sudo supervisorctl stop all
 `scripts/codedeploy/create_pid_dir`
 @snapend
 
-@snap[south span-85]
-@code[sh zoom-13 code-max code-show](README.md)
-@snapend
+@ul
+```
+#!/bin/bash
+mkdir /var/run/fenixdb
+chown -R www-data:www-data /var/run/fenixdb
+```
+@ulend
