@@ -220,7 +220,7 @@ fi
 @snap[south span-100 text-gray text-08]
 @[3, zoom-12](Get queue_name for this host)
 @[5-10, zoom-13](Different queues for each worker)
-@[14,15,16,19,22,25,28,30](Symlink appropriate celery config file)
+@[14-30, zoom-13](Symlink appropriate celery config file)
 
 ---?color=linear-gradient(180deg, white 75%, black 25%)
 @snap[north-east span-100 text-pink text-06]
