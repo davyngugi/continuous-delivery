@@ -1,4 +1,7 @@
+@span[]
 ## Continuous Delivery with Infrastructure as code
+@spanend
+
 @span[south heading]
 Part I
 @spanend
@@ -355,6 +358,7 @@ fi
 
 ---?color=linear-gradient(90deg, white 65%, white 65%)
 @title[liftoff]
+## Liftoff!
 
 @snap[west span-55]
 ```
