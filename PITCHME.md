@@ -99,7 +99,12 @@ hooks:
 ```
 
 @snap[south span-100 text-gray text-08]
-@[3-5](Specifiy where to copy the files on host)
+@[3-5](Specify where to copy files on host)
 @[6-13, zoom-13](Define permissions for files and dirs)
 @[14,19,24, zoom-12](Stage critical files not part of repo)
+@[29-33, zoom-13](Stop all services)
+@[34,35,38, zoom-12](Prep the environment)
+@[41,42,44,46,48, zoom-12](Setup the application)
+@[50,51, zoom-12](Start the application)
+@[54,44, zoom-12](Validate all services are running as expected)
 @snapend
