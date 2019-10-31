@@ -305,3 +305,16 @@ fi
 @snap[south span-100 text-gray text-08]
 @[2, zoom-12](Only perform status check on installed services)
 @[12-18, zoom-13](Use new supervisor feature to get accurate running state)
+
+---?color=linear-gradient(90deg, #5384AD 65%, white 65%)
+@title[liftoff]
+
+@snap[west span-55]
+```
+aws deploy create-deployment --cli-input-json \
+file://scripts/codedeploy/aws-deploy.json
+```
+
+@snap[east span-45]
+@img[shadow](assets/img/List-off.jpg)
+@snapend
