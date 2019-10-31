@@ -1,4 +1,4 @@
-@span[]
+@span[north]
 ## Continuous Delivery with Infrastructure as code
 @spanend
 
