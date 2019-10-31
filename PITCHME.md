@@ -217,7 +217,7 @@ else
 fi
 ```
 
----?color=linear-gradient(180deg, white 75%, gray 25%)
+---?color=linear-gradient(180deg, white 75%, orange 25%)
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/install_dependencies`
 @snapend
@@ -231,7 +231,7 @@ psmisc git
 ```
 
 @snap[south span-100 text-white]
-Note: Do **NOT** install supervisor with package manager
+Don't install supervisor with package manager
 @snapend
 
 ---
