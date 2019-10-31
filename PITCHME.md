@@ -301,3 +301,7 @@ if [[ "$workers_status" -ne 0 ]] ; then
   exit 3
 fi
 ```
+
+@snap[south span-100 text-gray text-08]
+@[2, zoom-12](Only perform status check on installed services)
+@[12-18, zoom-13](Use new supervisor feature to get accurate running state)
