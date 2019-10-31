@@ -345,7 +345,7 @@ fi
 @snap[west span-55]
 ```
 aws deploy create-deployment --cli-input-json \
-file://scripts/codedeploy/aws-deploy.json
+file://scripts/codedeploy/aws-deploy.json 
 ```
 @snapend
 
