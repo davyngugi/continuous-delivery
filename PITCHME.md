@@ -100,6 +100,6 @@ hooks:
 
 @snap[south span-100 text-gray text-08]
 @[3-5](Specifiy where to copy the files on host)
-@[6,13, zoom-13](Define permissions for files and dirs)
-@[14-28, zoom-12](Stage critical files not part of repo)
+@[6-13, zoom-13](Define permissions for files and dirs)
+@[14,19,24, zoom-12](Stage critical files not part of repo)
 @snapend
