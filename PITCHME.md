@@ -225,8 +225,14 @@ fi
 ```
 #!/bin/bash
 sudo apt-get update
-sudo apt-get install -y build-essential python-setuptools python-dev python-pip libxml2-dev libxslt-dev libssl-dev libevent-dev libaio1 psmisc git
+sudo apt-get install -y build-essential python-setuptools python-dev \
+python-pip libxml2-dev libxslt-dev libssl-dev libevent-dev libaio1 \
+psmisc git
 ```
+
+@snap[south span-100 text-white]
+Note: Do **NOT** install supervisor with package manager
+@snapend
 
 ---
 @snap[north-east span-100 text-pink text-06]
