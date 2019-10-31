@@ -349,5 +349,5 @@ file://scripts/codedeploy/aws-deploy.json
 ```
 
 @snap[east span-35]
-@img[shadow](assets/img/Lift-off.png)
+![IMAGE](assets/img/Lift-off.png)
 @snapend
