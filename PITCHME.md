@@ -348,6 +348,6 @@ aws deploy create-deployment --cli-input-json \
 file://scripts/codedeploy/aws-deploy.json
 ```
 
-@snap[east span-45]
+@snap[east span-35]
 @img[shadow](assets/img/Lift-off.png)
 @snapend
