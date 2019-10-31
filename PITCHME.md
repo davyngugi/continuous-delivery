@@ -1,11 +1,11 @@
 ---
-@span[north]
+@snap[north]
 ## Continuous Delivery with Infrastructure as code
-@spanend
+@snapend
 
-@span[south heading]
+@snap[south heading]
 Part I
-@spanend
+@snapend
 
 ---
 @title[Background]
