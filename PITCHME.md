@@ -358,7 +358,10 @@ fi
 
 ---?color=linear-gradient(90deg, white 65%, white 65%)
 @title[liftoff]
+@snap[north text-pink]
 ## Liftoff!
+@snapend
+
 
 @snap[west span-55]
 ```
