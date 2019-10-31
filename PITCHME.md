@@ -379,5 +379,12 @@ file://scripts/codedeploy/aws-deploy.json
 ![IMAGE](assets/img/codedeploy-dashboard.png)
 
 ---
+@title[Thank You]
+@span[north heading]
+Source for this presentation
+@spanend
+[https://gitpitch.com/davyngugi/continuous-delivery#/](https://gitpitch.com/davyngugi/continuous-delivery#/)
+
+---
 @title[codedeploy events]
 ![IMAGE](assets/img/codedeploy-events.png)
