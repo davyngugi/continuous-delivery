@@ -1,4 +1,7 @@
-## Continuous Deploy with Infrastructure as code
+## Continuous Delivery with Infrastructure as code
+@span[south heading]
+Part I
+@spanend
 
 ---
 @title[Background]
@@ -8,7 +11,7 @@ Background Reading
 [https://fenixdb.atlassian.net/wiki/spaces/SOF/pages/417824996/FenixDB+Continuous+Deployment+Pipeline+W.I.P](https://fenixdb.atlassian.net/wiki/spaces/SOF/pages/417824996/FenixDB+Continuous+Deployment+Pipeline+W.I.P)
 
 ---
-@title[Appspec]
+@title[Appspec Structure]
 @snap[north heading text-pink]
 `appspec.yml`
 @snapend
@@ -34,6 +37,7 @@ hooks:
 ```
 
 ---
+@title[FenixDB Appspec]
 @snap[north-east span-100 text-pink text-06]
 `appspec.yml`
 @snapend
@@ -110,6 +114,7 @@ hooks:
 @snapend
 
 ---
+@title[stop services]
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/stop_services`
 @snapend
@@ -121,6 +126,7 @@ sudo supervisorctl stop all
 ```
 
 ---
+@title[create pid dir]
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/create_pid_dir`
 @snapend
@@ -132,6 +138,7 @@ chown -R www-data:www-data /var/run/fenixdb
 ```
 
 ---
+@title[extract commit]
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/extract_commit`
 @snapend
@@ -146,6 +153,7 @@ echo "${ADDR[-1]}" > /tmp/fenixdb_git_commit
 ```
 
 ---
+@title[setup git]
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/setup_git`
 @snapend
@@ -179,6 +187,7 @@ fi
 ```
 
 ---
+@title[sysmlink workers]
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/symlink_workers`
 @snapend
@@ -223,6 +232,7 @@ fi
 @[14-30, zoom-13](Symlink appropriate celery config file)
 
 ---?color=linear-gradient(180deg, white 75%, black 25%)
+@title[install dependencies]
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/install_dependencies`
 @snapend
@@ -240,6 +250,7 @@ Don't install supervisor with package manager
 @snapend
 
 ---
+@title[install requirements]
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/install_requirements`
 @snapend
@@ -260,6 +271,7 @@ sudo chown -R www-data:www-data /opt/fenixdb/env
 ```
 
 ---
+@title[start services]
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/start_services`
 @snapend
@@ -277,6 +289,7 @@ fi
 ```
 
 ---
+@title[status check]
 @snap[north-east span-100 text-pink text-06]
 `scripts/codedeploy/status_check`
 @snapend
@@ -308,8 +321,9 @@ fi
 
 
 ---
+@title[codedeploy configuration]
 @snap[north-east span-100 text-pink text-06]
-`scripts/codedeploy/start_services`
+`scripts/codedeploy/aws-deploy.json`
 @snapend
 
 ```
@@ -345,7 +359,7 @@ fi
 @snap[west span-55]
 ```
 aws deploy create-deployment --cli-input-json \
-file://scripts/codedeploy/aws-deploy.json 
+file://scripts/codedeploy/aws-deploy.json
 ```
 @snapend
 
