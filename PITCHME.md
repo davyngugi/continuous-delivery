@@ -382,7 +382,7 @@ file://scripts/codedeploy/aws-deploy.json
 ---
 @title[Thank You]
 @span[north heading]
-Source for this presentation
+URL for this presentation
 @spanend
 [https://gitpitch.com/davyngugi/continuous-delivery#/](https://gitpitch.com/davyngugi/continuous-delivery#/)
 
