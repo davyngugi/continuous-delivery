@@ -106,5 +106,27 @@ hooks:
 @[34,35,38, zoom-12](Prep the environment)
 @[41,42,44,46,48, zoom-12](Setup the application)
 @[50,51, zoom-12](Start the application)
-@[54,44, zoom-12](Validate all services are running as expected)
+@[54,55, zoom-12](Validate all services are running as expected)
 @snapend
+
+---
+@snap[north-east span-100 text-pink text-06]
+`scripts/codedeploy/stop_services`
+@snapend
+
+```
+#!/bin/bash
+sudo service uwsgi stop
+sudo supervisorctl stop all
+```
+
+---
+@snap[north-east span-100 text-pink text-06]
+`scripts/codedeploy/create_pid_dir`
+@snapend
+
+```
+#!/bin/bash
+mkdir /var/run/fenixdb
+chown -R www-data:www-data /var/run/fenixdb
+```
